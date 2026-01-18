@@ -1,0 +1,10 @@
+# Core testing framework
+pytest
+
+# Playwright for Python
+pytest-playwright
+playwright
+
+# Useful plugins (optional but recommended)
+pytest-base-url==2.0.0
+pytest-html==4.1.1
