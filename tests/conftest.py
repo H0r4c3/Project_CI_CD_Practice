@@ -3,18 +3,9 @@ import pytest
 
 
 @pytest.fixture(scope="session")
-def browser_context_args(browser_context_args):
-    """Force headless mode for all tests"""
+def browser_type_launch_args(browser_type_launch_args):
+    """Force headless mode in CI by setting launch args"""
     return {
-        **browser_context_args,
+        **browser_type_launch_args,
+        "headless": True,  # Always run headless
     }
-
-
-def pytest_addoption(parser):
-    """Add custom command line options"""
-    parser.addoption(
-        "--headed",
-        action="store_true",
-        default=False,
-        help="Run tests in headed mode (with visible browser)"
-    )
