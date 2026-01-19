@@ -143,3 +143,4 @@ PWDEBUG=1 pytest
 - [Playwright Python Docs](https://playwright.dev/python/)
 - [Pytest Documentation](https://docs.pytest.org/)
 - [GitHub Actions Docs](https://docs.github.com/en/actions)
+CI/CD Test
