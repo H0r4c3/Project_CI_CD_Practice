@@ -52,7 +52,7 @@ class TestAdvancedExamples:
         link = page.get_by_role("link", name="Learn more")
         
         # Verify href attribute
-        expect(link).to_have_attribute("href", "https://www.iana.org/help/example-domains")
+        expect(link).to_have_attribute("href", "https://iana.org/domains/example")
     
     @pytest.mark.search
     def test_text_content(self, page: Page):
